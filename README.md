@@ -8,12 +8,7 @@ Homebrew casks for apps by [@Gidrono](https://github.com/Gidrono).
 brew install --cask gidrono/tap/paletrail
 ```
 
-Or tap once, then use short names:
-
-```bash
-brew tap gidrono/tap
-brew install --cask paletrail
-```
+Using the full `gidrono/tap/<name>` form taps the repo and trusts the cask automatically. After that, `brew upgrade --cask paletrail` and `brew uninstall --cask paletrail` work with the short name.
 
 ## Casks
 
