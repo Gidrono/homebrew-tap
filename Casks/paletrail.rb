@@ -4,7 +4,7 @@ cask "paletrail" do
 
   url "https://github.com/Gidrono/paletrail/releases/download/v#{version}/PaleTrail.zip"
   name "PaleTrail"
-  desc "GitHub-style trail of colourful pixel squares behind the cursor while holding Cmd"
+  desc "GitHub-style trail of colourful pixel squares behind the cursor when holding Cmd"
   homepage "https://github.com/Gidrono/paletrail"
 
   livecheck do
@@ -12,14 +12,13 @@ cask "paletrail" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "PaleTrail.app"
 
   # The app is ad-hoc signed, not notarized.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/PaleTrail.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/PaleTrail.app"]
   end
 
   uninstall quit: "com.gidrono.paletrail"
