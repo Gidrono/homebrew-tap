@@ -14,7 +14,7 @@ Using the full `gidrono/tap/<name>` form taps the repo and trusts the cask autom
 
 | Cask | Description |
 | --- | --- |
-| [`paletrail`](https://github.com/Gidrono/paletrail) | GitHub-style trail of colourful pixel squares behind the cursor while holding ⌘ |
+| [`paletrail`](https://github.com/Gidrono/paletrail) | Trail of pixel squares behind the cursor while holding ⌘, in 8 colour palettes (GitHub, Earthy, Sunset, Fire, Ocean, Forest, Neon, Pastel) |
 
 ## Updating a cask
 

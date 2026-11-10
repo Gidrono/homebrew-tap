@@ -4,7 +4,7 @@ cask "paletrail" do
 
   url "https://github.com/Gidrono/paletrail/releases/download/v#{version}/PaleTrail.zip"
   name "PaleTrail"
-  desc "GitHub-style trail of colourful pixel squares behind the cursor when holding Cmd"
+  desc "Pixel-square cursor trail with 8 colour palettes, shown while holding Cmd"
   homepage "https://github.com/Gidrono/paletrail"
 
   livecheck do
