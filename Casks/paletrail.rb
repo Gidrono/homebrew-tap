@@ -1,6 +1,6 @@
 cask "paletrail" do
-  version "0.1.0"
-  sha256 "ec96e4785304f4eb508d7607edbca794dade5227bb7de3ad7d86db7206ca27ad"
+  version "0.1.1"
+  sha256 "f623db59e350c8a6f1a532618e873ac995ee6b9dbc42b50c0ad78844351d2c8b"
 
   url "https://github.com/Gidrono/paletrail/releases/download/v#{version}/PaleTrail.zip"
   name "PaleTrail"
@@ -15,11 +15,6 @@ cask "paletrail" do
   depends_on macos: :ventura
 
   app "PaleTrail.app"
-
-  # The app is ad-hoc signed, not notarized.
-  postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/PaleTrail.app"]
-  end
 
   uninstall quit: "com.gidrono.paletrail"
 
