@@ -14,12 +14,12 @@ Using the full `gidrono/tap/<name>` form taps the repo and trusts the cask autom
 
 | Cask | Description |
 | --- | --- |
-| [`peiltrail`](https://github.com/Gidrono/peiltrail) (formerly `paletrail`) | Trail of pixel squares behind the cursor while holding ⌘, in 8 colour palettes (GitHub, Earthy, Sunset, Fire, Ocean, Forest, Neon, Pastel) |
+| [`peiltrail`](https://github.com/Gidrono/PeilTrail) (formerly `paletrail`) | Trail of pixel squares behind the cursor while holding ⌘, in 8 colour palettes (GitHub, Earthy, Sunset, Fire, Ocean, Forest, Neon, Pastel) |
 
 ## Updating a cask
 
 After publishing a new release, bump `version` and `sha256` in `Casks/<name>.rb`:
 
 ```bash
-curl -sL https://github.com/Gidrono/peiltrail/releases/download/vX.Y.Z/PeilTrail.zip | shasum -a 256
+curl -sL https://github.com/Gidrono/PeilTrail/releases/download/vX.Y.Z/PeilTrail.zip | shasum -a 256
 ```
